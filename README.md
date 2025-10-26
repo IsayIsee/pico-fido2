@@ -125,3 +125,50 @@ After running `make`, the binary file `pico_fido2.uf2` will be generated. To loa
 ## Driver
 
 Pico FIDO2 uses the `HID` driver for FIDO and `CCID` for OpenPGP, both present in all major operating systems. It should be detected by all OS and browser/applications just like normal USB FIDO keys and smartcards.
+
+## License and Commercial Use
+
+This project is available under two editions:
+
+**Community Edition (FOSS)**
+- Released under the GNU Affero General Public License v3 (AGPLv3).
+- You are free to study, modify, and run the code, including for internal evaluation.
+- If you distribute modified binaries/firmware, OR if you run a modified version of this project as a network-accessible service, you must provide the corresponding source code to the users of that binary or service, as required by AGPLv3.
+- No warranty. No SLA. No guaranteed support.
+
+**Enterprise / Commercial Edition**
+- Proprietary license for organizations that want to:
+  - run this in production with multiple users/devices,
+  - integrate it into their own product/appliance,
+  - enforce corporate policies (PIN policy, admin/user roles, revocation),
+  - deploy it as an internal virtualized / cloud-style service,
+  - and *not* be required to publish derivative source code.
+- Base package includes:
+  - commercial license (no AGPLv3 disclosure obligation for your modifications / integration)
+  - onboarding call
+  - access to officially signed builds
+- Optional / on-demand enterprise components that can be added case-by-case:
+  - ability to operate in multi-user / multi-device environments
+  - device inventory, traceability and secure revocation/offboarding
+  - custom attestation, per-organization device identity / anti-cloning
+  - virtualization / internal "HSM or auth backend" service for multiple teams or tenants
+  - post-quantum (PQC) key material handling and secure PQC credential storage
+  - hierarchical deterministic key derivation (HD wallet–style key trees for per-user / per-tenant keys, firmware signing trees, etc.)
+  - cryptographically signed audit trail / tamper-evident logging
+  - dual-control / two-person approval for high-risk operations
+  - secure key escrow / disaster recovery strategy
+  - release-signing / supply-chain hardening toolchain
+  - policy-locked hardened mode ("FIPS-style profile")
+  - priority security-response SLA
+  - white-label demo / pre-sales bundle
+
+Typical licensing models:
+- Internal use (single legal entity, including internal private cloud / virtualized deployments).
+- OEM / Redistribution / Service (ship in your product OR offer it as a service to third parties).
+
+These options are scoped and priced individually depending on which components you actually need.
+
+For commercial licensing and enterprise features, email pol@henarejos.me
+Subject: `ENTERPRISE LICENSE <your company name>`
+
+See `ENTERPRISE.md` for details.
